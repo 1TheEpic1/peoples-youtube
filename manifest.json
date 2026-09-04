@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "People's YouTube",
+  "version": "0.5.0",
+  "description": "Platform from people for people. Local feed processing.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content-home.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "People's YouTube — настройки"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "peoples-youtube@local"
+    }
+  }
+}

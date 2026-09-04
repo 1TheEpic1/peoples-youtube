@@ -1,0 +1,83 @@
+#peoples-banner {
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 10px 16px;
+  font-size: 13px;
+  line-height: 1.4;
+  border-bottom: 2px solid #ff4d4d;
+}
+
+.peoples-banner-text {
+  flex: 1;
+}
+
+.peoples-banner-close {
+  flex-shrink: 0;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  line-height: 1;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.peoples-banner-close:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.clickbait-badge {
+  background: #ff4d4d;
+  color: #fff;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.scam-badge {
+  background: #b30000;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 4px;
+  box-shadow: 0 0 0 1px #ff5c5c inset;
+}
+
+.discovery-badge {
+  background: #ffaa00;
+  color: #1a1a1a;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.blacklist-overlay {
+  position: absolute;
+  inset: 0;
+  background: #808080;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  padding: 8px;
+  z-index: 20;
+}
