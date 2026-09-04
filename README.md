@@ -1,5 +1,5 @@
 # peoples-youtube
-# People's YouTube v0.5.0 🌟
+# People's YouTube v0.5.0 
 
 > **Project Slogan:** Platform by people for people / Платформа от людей для людей.
 
@@ -9,12 +9,12 @@ English version below | [Перейти к русской версии](#рус�
 
 ## English Version
 
-### 📜 Description
+###  Description
 **People's YouTube** is a cross-browser extension (Manifest V3) designed to clean YouTube from scams, clickbaits, and brainrot content. Unlike corporate algorithms that capture user attention with digital garbage, this plugin restores the platform's original human soul.
 
 All calculations and filtering happen **strictly locally on the user's CPU**. The plugin respects the YouTube economy and **does NOT block official ads**, preserving revenue for honest creators.
 
-### 🛡️ Core Features
+###  Core Features
 * **Super-Priority #0 (Custom Blacklist "Don't Want to See"):** Users can input any keywords or creator names in the settings popup. The video card will be completely covered by a solid grey overlay saying *"Hidden by your filter"*.
 * **Priority #1 (Scam & Dangerous Software Protection):** A hard regex-based filter identifies gaming currency scams (hacks, cheats, free robux/v-bucks/gems/minecoins). The video card fades to opacity 0.15 and receives a bright red safety badge.
 * **Priority #2 (Anti-Clickbait & Anti-Brainrot):** 
@@ -25,13 +25,13 @@ All calculations and filtering happen **strictly locally on the user's CPU**. Th
   * **For regular videos:** Limit strictly under 1000 views.
   * **For Live Streams:** A separate, dedicated limit strictly under 50 live viewers.
 
-### 🛠️ Technical Insights v0.5.0
+###  Technical Insights v0.5.0
 1. **Cross-Browser Compatibility:** Powered by a built-in shim (`var browser = chrome`), the exact same codebase runs flawlessly in **Firefox, Google Chrome, Microsoft Edge, Yandex Browser, and Opera**.
 2. **Instant Settings Sync:** Popup configuration applies to all open YouTube tabs instantly without manual page reloads via `browser.storage.onChanged`.
 3. **Virtual Scroll Shield:** Handles YouTube's SPA navigation (`yt-navigate-finish`) and dynamic DOM node reuse, preventing false positives when scrolling.
 4. **Smart Metadata Parsing:** Extracts the exact first digit group of views (preventing concatenation with video release dates) and correctly parses multilingual localization keys (`млн`, `тыс`, `K`, `M`) in any text case.
 
-### 🚀 Installation Guide (Firefox Developer Mode)
+###  Installation Guide (Firefox Developer Mode)
 1. Download all files from this repository into a single folder on your PC.
 2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`.
 3. Click the **"Load Temporary Add-on..."** button.
@@ -42,12 +42,12 @@ All calculations and filtering happen **strictly locally on the user's CPU**. Th
 
 ## Русская Версия
 
-### 📜 Описание проекта
+###  Описание проекта
 **People's YouTube** — это кроссбраузерное расширение (Manifest V3), созданное для очистки YouTube от мошенничества, кликбейта и «брэйнрот»-контента. В отличие от корпоративных алгоритмов, которые удерживают внимание пользователя мусорными роликами, этот плагин возвращает платформе её первоначальную человеческую душу.
 
 Все вычисления и фильтрация происходят **строго локально на процессоре пользователя**. Плагин уважает экономику YouTube и **НЕ блокирует официальную рекламу**, сохраняя доход честным авторам.
 
-### 🛡️ Главные функции и возможности
+###  Главные функции и возможности
 * **Сверхприоритет №0 (Чёрный список «Не хочу видеть»):** Пользователь может вписать любые стоп-слова или имена блогеров в меню настроек. Видео полностью перекрывается серым оверлеем с надписью *"Скрыто вашим фильтром"*.
 * **Приоритет №1 (Защита от Скама и Опасного ПО):** Жесткий фильтр регулярных выражений (Regex) вычисляет падежи и корни мошеннических слов (чит, взлом, халява, бесплатные робуксы/гемы/в-баксы). Видео становится блеклым (opacity 0.15) и получает ярко-красный бейдж безопасности.
 * **Приоритет №2 (Анти-Кликбейт и Анти-Брэйнрот):** 
@@ -68,7 +68,7 @@ All calculations and filtering happen **strictly locally on the user's CPU**. Th
 
 ---
 
-### 🚀 Как запустить в режиме разработчика (на примере Firefox)
+###  Как запустить в режиме разработчика (на примере Firefox)
 1. Скачайте все файлы репозитория в одну папку на компьютере.
 2. Откройте Firefox и перейдите по адресу `about:debugging#/runtime/this-firefox`.
 3. Нажмите кнопку **«Загрузить временное расширение...»** (Load Temporary Add-on...).
